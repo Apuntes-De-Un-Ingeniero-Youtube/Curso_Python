@@ -7,7 +7,6 @@ class Producto:
         self._nombre = nombre
         self._precio = precio
 
-    @property
     def get_precio(self):
         return self._precio
 
@@ -19,4 +18,4 @@ if __name__ == "__main__":
     producto1 = Producto("Procesador", 1000)
     print(producto1)
     producto2 = Producto("Tarjeta gráfica", 1700)
-    print(producto2)
+    print(producto2.get_precio())
