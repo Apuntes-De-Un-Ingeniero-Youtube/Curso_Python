@@ -72,6 +72,9 @@ class Employees:
     # --- Fin Métodos Set ---
 
     # --- Métodos Get ---
+    def get_id_employee(self):
+        return self._id_employee
+
     def get_last_name(self):
         return self._last_name
 

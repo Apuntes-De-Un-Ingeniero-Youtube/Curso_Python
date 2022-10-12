@@ -52,6 +52,9 @@ class Customers:
     # --- Fin Métodos Set ---
 
     # --- Métodos Get ---
+    def get_id_customer(self):
+        return self._id_customer
+
     def get_company_name(self):
         return self._company_name
 
