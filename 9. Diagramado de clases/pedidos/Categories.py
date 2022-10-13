@@ -23,6 +23,9 @@ class Categories:
     # --- Fin Métodos Set ---
 
     # --- Métodos Get ---
+    def get_id_category(self):
+        return self._id_category
+
     def get_category_name(self):
         return self._category_name
 

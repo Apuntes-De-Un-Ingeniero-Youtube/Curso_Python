@@ -56,6 +56,9 @@ class Supliers:
     # --- Fin Métodos Set ---
 
     # --- Métodos Get ---
+    def get_id_supplier(self):
+        return self._id_suplier
+
     def get_company_name(self):
         return self._company_name
 
@@ -109,5 +112,5 @@ class Supliers:
 
 if __name__ == "__main__":
     suplier_prueba = Supliers("calle 67 90-09", "New York", "Coca bit",
-                                "contact name", "contact title", "EEUU", "fax", 5555098, 98765, "Norte", "home page")
+                              "contact name", "contact title", "EEUU", "fax", 5555098, 98765, "Norte", "home page")
     print(suplier_prueba)
