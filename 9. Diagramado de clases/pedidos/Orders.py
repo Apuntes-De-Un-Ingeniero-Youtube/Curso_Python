@@ -25,6 +25,89 @@ class Orders:
         self._ship_region = ship_region
         self._ship_postal_code = ship_postal_code
         self._ship_country = ship_country
+        # --- Fin Constructor de clase ---
+
+    # --- Métodos Set ---
+    def set_customer_id(self, customer_id):
+        self._customer_id = customer_id
+
+    def set_employee_id(self, employee_id):
+        self._employee_id = employee_id
+
+    def set_order_date(self, order_date):
+        self._order_date = order_date
+
+    def set_required_date(self, required_date):
+        self._required_date = required_date
+
+    def set_shipped_date(self, shipped_date):
+        self._shipped_date = shipped_date
+
+    def set_ship_via(self, ship_via):
+        self._ship_via = ship_via
+
+    def set_freight(self, freight):
+        self._freight = freight
+
+    def set_ship_name(self, ship_name):
+        self._ship_name = ship_name
+
+    def set_ship_address(self, ship_address):
+        self._ship_address = ship_address
+
+    def set_ship_city(self, ship_city):
+        self._ship_city = ship_city
+
+    def set_ship_region(self, ship_region):
+        self._ship_region = ship_region
+
+    def set_ship_postal_code(self, ship_postal_code):
+        self._ship_postal_code = ship_postal_code
+
+    def set_ship_country(self, ship_country):
+        self._ship_country = ship_country
+    # --- Fin Métodos Set ---
+
+    # --- Métodos Get ---
+    def get_customer_id(self):
+        return self._customer_id
+
+    def get_employee_id(self):
+        return self._employee_id
+
+    def get_order_date(self):
+        return self._order_date
+
+    def get_required_date(self):
+        return self._required_date
+
+    def get_shipped_date(self):
+        return self._shipped_date
+
+    def get_ship_via(self):
+        return self._ship_via
+
+    def get_freight(self):
+        return self._freight
+
+    def get_ship_name(self):
+        return self._ship_name
+
+    def get_ship_address(self):
+        return self._ship_address
+
+    def get_ship_city(self):
+        return self._ship_city
+
+    def get_ship_region(self):
+        return self._ship_region
+
+    def get_ship_postal_code(self):
+        return self._ship_postal_code
+
+    def get_ship_country(self):
+        return self._ship_country
+    # --- Fin Métodos Get ---
 
     def __str__(self) -> str:
         return f"""
