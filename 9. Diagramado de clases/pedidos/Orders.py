@@ -69,6 +69,9 @@ class Orders:
     # --- Fin Métodos Set ---
 
     # --- Métodos Get ---
+    def get_id_order(self):
+        return self._id_order
+
     def get_customer_id(self):
         return self._customer_id
 
