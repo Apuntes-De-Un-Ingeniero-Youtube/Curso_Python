@@ -22,6 +22,3 @@ def add_favorito():
     # Escribiendo el favorito en el archivo .json
     json.dump(diccionario, archivo)
     archivo.close()
-
-
-add_favorito()

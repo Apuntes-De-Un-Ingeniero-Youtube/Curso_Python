@@ -11,8 +11,8 @@ def update_favorito():
     datos = json.load(archivo)
     archivo.close()
 
-    # Eliminando el favorito
-    
+    # Eliminando el favorito.
+    if titulo_modificar in datos:
         del datos[titulo_modificar]
     else:
         print("No existe el favorito en el archivo")
@@ -44,4 +44,3 @@ def update_favorito():
     archivo.close()
 
 
-update_favorito()
