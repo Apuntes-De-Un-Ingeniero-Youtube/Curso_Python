@@ -1,7 +1,7 @@
 import json
 
 
-def add_favorito():
+def add_favorito(URL):
     lista = []
     diccionario = {}
 
@@ -14,11 +14,13 @@ def add_favorito():
     lista.append(url)
     lista.append(comentario)
 
-    archivo = open("11. JSON/favoritos/favoritos.json", "w")
-
     # Agregando el favorito al diccionario
     diccionario[titulo] = lista
 
-    # Escribiendo el favorito en el archivo .json
-    json.dump(diccionario, archivo)
+    escribir_json(URL, diccionario)
+
+
+def escribir_json(url, datos):
+    archivo = open(url, "w")
+    json.dump(datos, archivo)
     archivo.close()
