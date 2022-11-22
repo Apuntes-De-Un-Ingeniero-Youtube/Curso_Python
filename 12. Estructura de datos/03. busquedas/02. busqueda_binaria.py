@@ -41,4 +41,4 @@ def buscar(dato, lista):
 
 
 lista = [1, 2, 3, 5, 9]
-print(buscar(4, lista))
+print(buscar(3, lista))
