@@ -7,3 +7,5 @@ conexion = mysql.connector.connect(
     db="prueba_mysql")
 
 print(conexion)
+
+conexion.close()

@@ -9,3 +9,5 @@ conexion = psycopg2.connect(
 )
 
 print(conexion)
+
+conexion.close()
