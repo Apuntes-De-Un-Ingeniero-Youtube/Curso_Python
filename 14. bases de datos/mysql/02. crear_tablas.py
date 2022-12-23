@@ -11,7 +11,7 @@ cursor = conexion.cursor()
 
 # Definir el SQL para crear la tabla
 crear_tabla_paciente_sql = """
-    CREATE TABLE medico (
+    CREATE TABLE IF NOT EXISTS medico (
         id_medico INT AUTO_INCREMENT PRIMARY KEY,
         nombre VARCHAR(50) NOT NULL,
         tipo_identificacion VARCHAR(10) NOT NULL,

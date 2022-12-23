@@ -11,7 +11,7 @@ conexion = psycopg2.connect(
 cursor = conexion.cursor()
 
 crear_tabla_citas_sql = """
-    CREATE TABLE citas (
+    CREATE TABLE IF NOT EXISTS citas (
         id_cita SERIAL PRIMARY KEY,
         medico_asociado INTEGER NOT NULL,
         paciente_asociado INTEGER NOT NULL,
