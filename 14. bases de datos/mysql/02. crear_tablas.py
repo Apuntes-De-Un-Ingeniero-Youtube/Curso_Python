@@ -1,10 +1,6 @@
-import mysql.connector
+from Conexion import Conexion
 
-conexion = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="",
-    db="prueba_mysql")
+conexion = Conexion.obtener_conexion_mysql()
 
 # Crear un cursosr para ejecutar consultas
 cursor = conexion.cursor()

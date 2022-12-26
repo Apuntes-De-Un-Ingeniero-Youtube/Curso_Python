@@ -1,16 +1,9 @@
-import sqlite3
+from Conexion import Conexion
 
-conexion = sqlite3.connect("./14. bases de datos/sqlite/prueba_sqlite.db")
-
-cursor = conexion.cursor()
-
-eliminar_tabla_paciente_sql = """
-    DROP TABLE IF EXISTS paciente;
-"""
-
-cursor.execute(eliminar_tabla_paciente_sql)
-
-conexion.commit()
-
-cursor.close()
-conexion.close()
+with Conexion.obtener_conexion_sqlite() as conexion:
+    cursor = conexion.cursor()
+    eliminar_tabla_paciente_sql = """
+        DROP TABLE IF EXISTS paciente;
+    """
+    cursor.execute(eliminar_tabla_paciente_sql)
+    cursor.close()
