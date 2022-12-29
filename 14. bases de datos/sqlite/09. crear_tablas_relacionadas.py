@@ -12,5 +12,14 @@ with Conexion.obtener_conexion_sqlite() as conexion:
             historia_clinica TEXT NOT NULL
         );   
     """
-    cursor.execute(crear_tabla_paciente_sql)
+
+    crear_tabla_citas_sql = """
+        CREATE TABLE IF NOT EXISTS citas (
+            id_cita INTEGER PRIMARY KEY,
+            fecha_cita TEXT NOT NULL,
+            paciente_asociado INTEGER NOT NULL,
+            FOREIGN KEY (paciente_asociado) REFERENCES paciente (id_paciente)
+        );   
+    """
+    cursor.execute(crear_tabla_citas_sql)
     cursor.close()
