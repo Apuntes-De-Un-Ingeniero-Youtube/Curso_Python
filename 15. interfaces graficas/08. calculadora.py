@@ -2,6 +2,7 @@ import tkinter as tk
 
 
 class Calculator(object):
+    '''Esta clase construye y manipula una calculadora gráfica'''
 
     def __init__(self, parent=tk.Tk()):
         self.parent = parent
